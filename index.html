@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>smoothed line | amCharts</title>
+  <meta name="description" content="97年-106年違反毒品危害防制條例人數" />
+  
+  <!-- amCharts javascript sources -->
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+  
+
+  <!-- amCharts javascript code -->
+  <script type="text/javascript">
+   AmCharts.makeChart("chartdiv",
+    {
+     "type": "serial",
+     "categoryField": "category",
+     "startDuration": 1,
+     "fontSize": 16,
+     "categoryAxis": {
+      "gridPosition": "start",
+      "title": "",
+      "titleBold": false,
+      "titleFontSize": 15
+     },
+     "trendLines": [],
+     "graphs": [
+      {
+       "bullet": "round",
+       "fontSize": 15,
+       "id": "AmGraph-1",
+       "lineThickness": 3,
+       "periodSpan": 0,
+       "tabIndex": -2,
+       "title": "毒品危害防制條例",
+       "type": "smoothedLine",
+       "valueField": "column-1"
+      }
+     ],
+     "guides": [],
+     "valueAxes": [
+      {
+       "id": "ValueAxis-1",
+       "title": "",
+       "titleBold": false,
+       "titleFontSize": 15,
+       "titleRotation": 0
+      }
+     ],
+     "allLabels": [],
+     "balloon": {},
+     "legend": {
+      "enabled": true,
+      "useGraphSettings": true
+     },
+     "titles": [
+      {
+       "id": "Title-1",
+       "size": 15,
+       "text": ""
+      }
+     ],
+     "dataProvider": [
+      {
+       "category": "97",
+       "column-1": "14492"
+      },
+      {
+       "category": "98",
+       "column-1": "12440"
+      },
+      {
+       "category": "99",
+       "column-1": "11247"
+      },
+      {
+       "category": "100",
+       "column-1": "11474"
+      },
+      {
+       "category": "101",
+       "column-1": "10971"
+      },
+      {
+       "category": "102",
+       "column-1": "10434"
+      },
+      {
+       "category": "103",
+       "column-1": "9681"
+      },
+      {
+       "category": "104",
+       "column-1": "9740"
+      },
+      {
+       "category": "105",
+       "column-1": "10933"
+      },
+      {
+       "category": "106",
+       "column-1": "11699"
+      }
+     ]
+    }
+   );
+  </script>
+ </head>
+ <body>
+  <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+ </body>
+</html>
